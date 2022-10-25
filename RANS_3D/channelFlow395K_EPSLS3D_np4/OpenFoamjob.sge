@@ -1,0 +1,14 @@
+#!/bin/bash --login
+#$ -pe smp.pe 4
+#$ -cwd
+#$ -j y
+module load apps/gcc/openfoam/9
+
+source $foamDotFile
+
+blockMesh > blockMesh.log
+
+checkMesh -allTopology -allGeometry -constant > checkMesh.log
+
+mpirun -np $NSLOTS pimpleFoam -parallel > pimpleFoam.log
+postChannel

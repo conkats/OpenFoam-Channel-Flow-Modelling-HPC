@@ -1,0 +1,24 @@
+#!/bin/sh 
+
+cd ${0%/*} || exit 1 #Run from this directory
+
+# Source tutorial run functions
+#. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+if [ ! -d constant/polyMesh ]
+then
+    blockMesh
+    checkMesh -allTopology -allGeometry -constant
+fi
+decomposePar -cellDist -force
+mpirun -np 4 pimpleFoam -parallel > log
+reconstructPar -latestTime
+
+postChannel
+#plot residuals
+#gnuplot plotResiduals 
+
+postProcess -func "components(U)" -latestTime
+postProcess -func sample -latestTime
+#python3 Uplus_Tplus_k_uv_KEPS.py postProcess/sample/$latestTime/vertical
+

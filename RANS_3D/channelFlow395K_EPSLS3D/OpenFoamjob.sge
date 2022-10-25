@@ -1,0 +1,14 @@
+#!/bin/bash --login
+#$ -cwd
+
+module load apps/gcc/openfoam/9
+
+source $foamDotFile
+
+blockMesh > blockMesh.log
+
+checkMesh -allTopology -allGeometry -constant > checkMesh.log
+
+pimpleFoam > pimpleFoam.log 
+
+postChannel
