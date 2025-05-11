@@ -1,0 +1,17 @@
+#!/bin/sh 
+
+cd ${0%/*} || exit 1 #Run from this directory
+
+if [ ! -d constant/polyMesh ]
+then
+    runApplication blockMesh
+    runApplication checkMesh -allTopology -allGeometry -constant
+fi
+#decomposePar
+pisoFoamspecdpdxi > log
+
+
+#plot residuals
+#gnuplot plotResiduals -
+postProcess -func "components(U)" -latestTime
+postProcess -func sample -latestTime

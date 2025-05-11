@@ -1,0 +1,6 @@
+GenElliptic/GenElliptic.C
+RefEBRSM/RefEBRSM.C
+RefEBRSMEterm1/RefEBRSMEterm1.C
+
+LIB = $(FOAM_USER_LIBBIN)/libincompressibleRSTMElliptic
+

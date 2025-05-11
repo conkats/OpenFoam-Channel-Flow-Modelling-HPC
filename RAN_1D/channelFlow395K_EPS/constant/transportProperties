@@ -1,0 +1,24 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dpdxi           [0 1 -2 0 0 0 0] (-1 0 0);//define the pressure gradient value
+
+transportModel  Newtonian;
+
+nu              [0 2 -1 0 0 0 0] 0.002531;//1/Retau=1/395
+
+
+// ************************************************************************* //

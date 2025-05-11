@@ -1,0 +1,58 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      p;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+//note OF solves for kinematic pressure (p/\rho)
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    top
+    {
+        type            zeroGradient;//dP/dy=0
+    }
+
+    bottom
+    {
+        type            zeroGradient;
+    }
+
+    inlet
+    {
+        type            cyclic;
+       // value           uniform 101.325;//set the dP/dx=P1-P2/L
+    }
+
+    outlet
+    {
+        type            cyclic;
+        //value           uniform 0;
+    }
+    
+    front
+    {
+        type            cyclic;    
+    }
+    Back
+    {
+         type           cyclic;
+    }
+
+
+
+    //#includeEtc "caseDicts/setConstraintTypes"
+}
+
+// ************************************************************************* //

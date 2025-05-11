@@ -1,0 +1,14 @@
+OBJECTS = \
+$(OBJECTS_DIR)/GenElliptic.o\
+$(OBJECTS_DIR)/EBRSMSebilleau.o\
+$(OBJECTS_DIR)/RefEBRSM.o\
+$(OBJECTS_DIR)/EBRSM.o\
+$(OBJECTS_DIR)/RefEBRSMEterm.o\
+$(OBJECTS_DIR)/RefEBRSMforhybrid.o\
+$(OBJECTS_DIR)/RefEBRSMforhybridIsoFrcNormStrs.o\
+$(OBJECTS_DIR)/RefEBRSMforhybridIsoFrcOneNormStrs.o\
+$(OBJECTS_DIR)/RefEBRSMEterm1.o\
+$(OBJECTS_DIR)/EBRSMSebilleauEterm.o\
+$(OBJECTS_DIR)/RefEBRSMBuoyantExSrc.o\
+$(OBJECTS_DIR)/EBRSMSebilleauEtermBuoyantExSrc.o\
+$(OBJECTS_DIR)/RefEBRSMEterm1BuoyantExSrc.o

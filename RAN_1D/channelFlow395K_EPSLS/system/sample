@@ -1,0 +1,43 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format          ascii;
+    class           dictionary;
+    location        "system";
+    object          sample;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+type sets;
+libs            ("libsampling.so");
+
+interpolationScheme cellPoint;
+
+setFormat csv;
+
+sets
+(
+    verticalline
+    {
+        type            lineCell;
+        axis            y;
+        start           (0.5 0 0.5);
+        end             (0.5 2 0.5);
+	//nPoints		30;
+    }
+);
+
+fields
+(
+    U R epsilon k
+);
+
+
+// ************************************************************************* //
