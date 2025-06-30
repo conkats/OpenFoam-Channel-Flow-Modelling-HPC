@@ -1,0 +1,14 @@
+DEPENDENCIES = \
+GenElliptic/GenElliptic.dep\
+EBRSMSebilleau/EBRSMSebilleau.dep\
+RefEBRSM/RefEBRSM.dep\
+EBRSM/EBRSM.dep\
+RefEBRSMEterm/RefEBRSMEterm.dep\
+RefEBRSMforhybrid/RefEBRSMforhybrid.dep\
+RefEBRSMforhybridIsoFrcNormStrs/RefEBRSMforhybridIsoFrcNormStrs.dep\
+RefEBRSMforhybridIsoFrcOneNormStrs/RefEBRSMforhybridIsoFrcOneNormStrs.dep\
+RefEBRSMEterm1/RefEBRSMEterm1.dep\
+EBRSMSebilleauEterm/EBRSMSebilleauEterm.dep\
+RefEBRSMBuoyantExSrc/RefEBRSMBuoyantExSrc.dep\
+EBRSMSebilleauEtermBuoyantExSrc/EBRSMSebilleauEtermBuoyantExSrc.dep\
+RefEBRSMEterm1BuoyantExSrc/RefEBRSMEterm1BuoyantExSrc.dep

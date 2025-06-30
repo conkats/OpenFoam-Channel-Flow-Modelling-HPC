@@ -1,0 +1,13 @@
+include GenElliptic/GenElliptic.dep
+include EBRSMSebilleau/EBRSMSebilleau.dep
+include RefEBRSM/RefEBRSM.dep
+include EBRSM/EBRSM.dep
+include RefEBRSMEterm/RefEBRSMEterm.dep
+include RefEBRSMforhybrid/RefEBRSMforhybrid.dep
+include RefEBRSMforhybridIsoFrcNormStrs/RefEBRSMforhybridIsoFrcNormStrs.dep
+include RefEBRSMforhybridIsoFrcOneNormStrs/RefEBRSMforhybridIsoFrcOneNormStrs.dep
+include RefEBRSMEterm1/RefEBRSMEterm1.dep
+include EBRSMSebilleauEterm/EBRSMSebilleauEterm.dep
+include RefEBRSMBuoyantExSrc/RefEBRSMBuoyantExSrc.dep
+include EBRSMSebilleauEtermBuoyantExSrc/EBRSMSebilleauEtermBuoyantExSrc.dep
+include RefEBRSMEterm1BuoyantExSrc/RefEBRSMEterm1BuoyantExSrc.dep

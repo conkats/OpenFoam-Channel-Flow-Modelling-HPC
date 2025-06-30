@@ -1,0 +1,16 @@
+EXE_INC = \
+    -Iinclude \
+    -I$(LIB_SRC)/turbulenceModels \
+    -I$(LIB_SRC)/transportModels \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/turbulenceModels/incompressible/turbulenceModel/lnInclude \
+    -I$(LIB_SRC)/turbulenceModels/incompressible/RAS/lnInclude \
+    -I../../../../../bound/boundMinMax \
+    -I$(LIB_SRC)/OpenFOAM/fields/Fields/oneField/
+
+LIB_LIBS = \
+    -lincompressibleTurbulenceModel \
+    -lfiniteVolume \
+    -lmeshTools\
+    -lincompressibleRASModels

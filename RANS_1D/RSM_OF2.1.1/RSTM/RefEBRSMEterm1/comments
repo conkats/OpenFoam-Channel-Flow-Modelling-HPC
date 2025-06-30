@@ -1,0 +1,22 @@
+NOT AN ERROR for the improved model version check http://remimanceau.gforge.inria.fr/Publis/PDF/Manceau2005.pdf
+NOT AN ERROR // dot product between two symmTensor is not correctly defined in OF. ??????????  GenElliptic.C
+ NOT AN ERROR Wij =  skew(gradU); this gives minus omegaij of the paper since gradU=dUj/dxi ....skew(gradU)= 1/2*(dUj/dxi-dUi/dxj) bt this is for the SSG model which is not the default one .Its ok because the only place where omega is needed is  transpose and he used it 
+NOT AN ERROR seems that the LRR model has the linear pressure strain parts without phiijw unlike the gibson launder model
+SSG need to be set to indicate whether to use SSG or LRR
+
+
+
+
+crossTurbDiffusion is false by default:  ManceauHanjalic.C Ln 72 
+Hanjalic and Launder P.67 mention that C1 which is Clrr1_ in the implementation is nowadays chosen between 1.5 and 1.8. However, in the implementation it is  1.22
+
+sigmaK_ is 1.0 in both papers but 1.2 in the implemented model 
+sigmaEps_ 1.22 2002 and 1.15 2005 paper 1.65 the implemented model
+CMu       0.22          0.21            0.22
+C2_       1.85          1.83            1.9
+CL_       0.45          0.161           0.25          
+Cg3s_     1.9           1.3             1.3
+C1_       1.4           1.44            1.44
+implemented model has another Cmu_
+
+the term             +    Cg4_ * k_ * dev( twoSymm(fbij & fSij) ) doesn't give the correct corresponding part for 2/3 blm Slm delta ij because the trace of fbij & fSij is not the same as  blm Slm.. .This is for the SSG model ...CHECK
