@@ -1,0 +1,14 @@
+LOCAL_OBJECTS = \
+GenElliptic.o\
+EBRSMSebilleau.o\
+RefEBRSM.o\
+EBRSM.o\
+RefEBRSMEterm.o\
+RefEBRSMforhybrid.o\
+RefEBRSMforhybridIsoFrcNormStrs.o\
+RefEBRSMforhybridIsoFrcOneNormStrs.o\
+RefEBRSMEterm1.o\
+EBRSMSebilleauEterm.o\
+RefEBRSMBuoyantExSrc.o\
+EBRSMSebilleauEtermBuoyantExSrc.o\
+RefEBRSMEterm1BuoyantExSrc.o

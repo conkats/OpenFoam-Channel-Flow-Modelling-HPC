@@ -1,0 +1,14 @@
+SOURCE = \
+GenElliptic/GenElliptic.C\
+EBRSMSebilleau/EBRSMSebilleau.C\
+RefEBRSM/RefEBRSM.C\
+EBRSM/EBRSM.C\
+RefEBRSMEterm/RefEBRSMEterm.C\
+RefEBRSMforhybrid/RefEBRSMforhybrid.C\
+RefEBRSMforhybridIsoFrcNormStrs/RefEBRSMforhybridIsoFrcNormStrs.C\
+RefEBRSMforhybridIsoFrcOneNormStrs/RefEBRSMforhybridIsoFrcOneNormStrs.C\
+RefEBRSMEterm1/RefEBRSMEterm1.C\
+EBRSMSebilleauEterm/EBRSMSebilleauEterm.C\
+RefEBRSMBuoyantExSrc/RefEBRSMBuoyantExSrc.C\
+EBRSMSebilleauEtermBuoyantExSrc/EBRSMSebilleauEtermBuoyantExSrc.C\
+RefEBRSMEterm1BuoyantExSrc/RefEBRSMEterm1BuoyantExSrc.C
